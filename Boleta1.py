@@ -1,0 +1,28 @@
+print("boletas 1_10:alvaro rojas oliva")
+print("BOLETA N°1")
+#INPUT
+polleria=input("Nombre de la polleria es: ")
+n_mesa=int(input("El numero de mesa es: "))
+azafata=input("El nombre de la azafata es: ")
+cliente=input("El nombre del cliente es:")
+pollo_brasa=int(input("Cantidad de pollo a la brasa: "))
+costo_pollo_brasa=float(input("El costo del pollo a la brasa es: "))
+n_gaseosa=int(input("El n° de gaseosas pedidas: "))
+costo_gaseosa=float(input("El precio por unidad de la gaseosa es: "))
+
+#PROCESSING
+total_pollo=(pollo_brasa * costo_pollo_brasa)
+total_gaseosa=(n_gaseosa * costo_gaseosa)
+total_consumo=(total_pollo + total_gaseosa)
+print("                                                      ")
+#OUTPUT
+print("################# BOLETA DE VENTA ##################")
+print("##############" + "POLLERIA " + polleria + "###################")
+print("####################################################")
+print("n° mesa:" + str(n_mesa) +  "                           azafata:" + azafata )
+print("cliente: " + cliente)
+print("####################################################")
+print("pedido   " +     "     cantidad   " +     "   prec.unit  "     +   "        total")
+print("pollo a la brasa  "  + str(pollo_brasa) + "            " + str(costo_pollo_brasa) + "           " + str(total_pollo))
+print("gaseosa           "  + str(n_gaseosa)   + "            "  + str(costo_gaseosa) + "             " + str(total_gaseosa))
+print("monto total:.................................." + str(total_consumo))

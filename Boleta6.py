@@ -1,0 +1,30 @@
+print("BOLETA N°6")
+#INPUT
+empresa=input("Nombre de la empresa es: ")
+R_U_C=int(input("El numero de R.U.C es:"))
+caja=int(input("El numero de caja es: "))
+fecha=input("ingrese la fecha: ")
+hora=input("ingrese la hora:")
+cajero=input("El nombre de la cajera es: ")
+cliente=input("El nombre del cliente es:")
+costo_ducha=float(input("El costo de la ducha es: "))
+costo_ceramica=float(input("El costo de la ceramica es: "))
+costo_innodoro=float(input("El costo del innodoro es: "))
+
+#PROCESSING
+total_venta=(costo_ceramica+costo_ducha+costo_innodoro)
+
+print("                                                      ")
+#OUTPUT
+print("##################### PROMART CENTER ####################")
+print("R.U.C  " + str(R_U_C))
+print("cliente  " + cliente + "   caja  " + str(caja) + "  cajero    " + cajero)
+print("################BOLETA DE VENTA#####################")
+print("                                            ")
+print("producto     "  +  "       precio   " )
+print("ceramica   " + "          " + str(costo_ceramica))
+print("ducha               "  + str(costo_ducha))
+print("innodoro           "  + str(costo_innodoro))
+print("monto total:       s/   " + str(total_venta))
+print("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _")
+print("fecha de emision:" + str(fecha)    + "     hora:" + str(hora))
